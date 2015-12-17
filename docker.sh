@@ -4,7 +4,7 @@ set -e
 
 #function installation des tools
 toolsPackage(){
-	#pré requis
+	#Outils de base
 	apt-get update
 	apt-get install -y nano curl wget ntpdate
 
@@ -14,7 +14,7 @@ toolsPackage(){
 	}
 
 dockerPackage(){
-	#Script Jessie
+	#Script pour Debian Jessie
 
 	#Update
 	apt-get update
@@ -55,18 +55,18 @@ select choix in "Stack LEMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 
 		    echo " "
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
-		    #https://hub.docker.com/r/richarvey/nginx-php-fpm/
-		    docker pull richarvey/nginx-php-fpm
+		    #https://hub.docker.com/r/dockerfiles/centos-lamp/
+		    docker pull dockerfiles/centos-lamp
 
 		    echo " "
 		    echo -e "\033[36mLancement du container \033[0m"
 		    #création d'un répertoire pour les sites web
-		    web="/dock/www/"
-		    mkdir -p $web
+		    stack="/dock/www/"
+		    mkdir -p $stack
 		    #création de la page test php
 		    echo "<?php phpinfo(); ?>" > /dock/www/index.php
 		    #exécute docker sur le port 80
-		    docker run --name nginx -p 80:80 -v  /dock/www:/usr/share/nginx/html -d richarvey/nginx-php-fpm
+		    docker run --name nginx -p 80:80 -v  $stack:/usr/share/nginx/html -d richarvey/nginx-php-fpm
 
 		    #récupération de l'IP locale
 		    iplocal=$(ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}')
@@ -106,7 +106,7 @@ select choix in "Stack LEMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 		    #création de la page test php
 		    echo "<?php phpinfo(); ?>" > /dock/www/index.php
 		    #exécute docker sur le port 80
-		    docker run --name nginx -p 80:80 -v  /dock/www:/usr/share/nginx/html -d richarvey/nginx-php-fpm
+		    docker run --name nginx -p 80:80 -v  $web:/usr/share/nginx/html -d richarvey/nginx-php-fpm
 
 		    #récupération de l'IP locale
 		    iplocal=$(ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}')
