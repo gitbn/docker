@@ -66,7 +66,7 @@ select choix in "Stack LEMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 		    #création de la page test php
 		    echo "<?php phpinfo(); ?>" > /dock/www/index.php
 		    #exécute docker sur le port 80
-		    docker run --name nginx -p 80:80 -v  $stack:/usr/share/nginx/html -d richarvey/nginx-php-fpm
+		    docker run -d -p 80:80 --name lamp -v $stack::/var/www/html/ dockerfiles/centos-lamp
 
 		    #récupération de l'IP locale
 		    iplocal=$(ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}')
