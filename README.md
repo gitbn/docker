@@ -4,7 +4,7 @@ Docker
 
 ### Utilisation
 
-Mise en place d'infrastructure docker avec debian Jessie.
+Mise en place d'infrastructure docker pour système à base de Debian.
 
 ```
 apt-get install git
@@ -23,4 +23,4 @@ Distribué :
 [PhpMyAdmin](https://hub.docker.com/r/nazarpc/phpmyadmin/)
 
 ### Automatisation
-Installation de docker pour Debian Jessie
+Installation de docker pour Debian.
