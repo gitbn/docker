@@ -41,7 +41,7 @@ echo " "
 select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
 	do 
 		case $REPLY in 
-			#choix: Installation de Stack LEMP
+			#choix: Installation de Stack LAMP
 		  1) echo -e "\033[36mInstallation du container : $choix. \033[0m"
 			echo " "
 			echo -e "\033[36mTéléchargement des tools \033[0m"
