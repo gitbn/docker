@@ -74,7 +74,7 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 		    echo " "
 		    echo -e "\033[36mNginx est disponible à l'adresse suivante : http://$iplocal:80 \033[0m"
 		 	echo " "
-		    echo -e "\033[36mFinito, placer votre site web dans $web \033[0m"
+		    echo -e "\033[36mFinito, placer votre site web dans $stack \033[0m"
 		    break
 		    ;;
 
