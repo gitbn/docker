@@ -1,196 +1,0 @@
- 
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) Stack LAMP	      3) MariaDB	    5) Docker standalone
-2) Nginx-php-fqm      4) PhpMyAdmin	    6) Quitter (q|Q)
-Choix?  
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) Stack LAMP	      3) MariaDB	    5) Docker standalone
-2) Nginx-php-fqm      4) PhpMyAdmin	    6) Quitter (q|Q)
-Choix? [36mInstallation du container : Docker standalone. [0m
- 
-[36mTéléchargement des tools [0m
-Hit http://http.kali.org sana InRelease
-Hit http://security.kali.org sana/updates InRelease
-Hit http://http.kali.org sana-proposed-updates InRelease
-Get:1 http://http.kali.org sana/main amd64 Packages [12.8 MB]
-Ign http://security.kali.org sana/updates/contrib Translation-en_US
-Ign http://security.kali.org sana/updates/contrib Translation-en
-Ign http://security.kali.org sana/updates/main Translation-en_US
-Ign http://security.kali.org sana/updates/main Translation-en
-Ign http://security.kali.org sana/updates/non-free Translation-en_US
-Ign http://security.kali.org sana/updates/non-free Translation-en
-Get:2 http://security.kali.org sana/updates/main amd64 Packages [260 kB]
-Get:3 http://http.kali.org sana/non-free amd64 Packages [164 kB]
-Hit http://security.kali.org sana/updates/contrib amd64 Packages
-Get:4 http://http.kali.org sana/contrib amd64 Packages [87.7 kB]
-Hit http://security.kali.org sana/updates/non-free amd64 Packages
-Get:5 http://http.kali.org sana-proposed-updates/main amd64 Packages [682 B]
-Get:6 http://http.kali.org sana-proposed-updates/contrib amd64 Packages [20 B]
-Get:7 http://http.kali.org sana-proposed-updates/non-free amd64 Packages [20 B]
-Ign http://http.kali.org sana/contrib Translation-en_US
-Ign http://http.kali.org sana/contrib Translation-en
-Ign http://http.kali.org sana/main Translation-en_US
-Ign http://http.kali.org sana/main Translation-en
-Ign http://http.kali.org sana/non-free Translation-en_US
-Ign http://http.kali.org sana/non-free Translation-en
-Ign http://http.kali.org sana-proposed-updates/contrib Translation-en_US
-Ign http://http.kali.org sana-proposed-updates/contrib Translation-en
-Ign http://http.kali.org sana-proposed-updates/main Translation-en_US
-Ign http://http.kali.org sana-proposed-updates/main Translation-en
-Ign http://http.kali.org sana-proposed-updates/non-free Translation-en_US
-Ign http://http.kali.org sana-proposed-updates/non-free Translation-en
-Fetched 13.3 MB in 17s (740 kB/s)
-Reading package lists...
-Reading package lists...
-Building dependency tree...
-Reading state information...
-curl is already the newest version.
-curl set to manually installed.
-nano is already the newest version.
-wget is already the newest version.
-The following extra packages will be installed:
-  lockfile-progs
-The following NEW packages will be installed:
-  lockfile-progs ntpdate
-0 upgraded, 2 newly installed, 0 to remove and 128 not upgraded.
-Need to get 85.5 kB of archives.
-After this operation, 306 kB of additional disk space will be used.
-Get:1 http://security.kali.org/kali-security/ sana/updates/main ntpdate amd64 1:4.2.6.p5+dfsg-7+deb8u1 [74.5 kB]
-Get:2 http://http.kali.org/kali/ sana/main lockfile-progs amd64 0.1.17 [11.0 kB]
-Fetched 85.5 kB in 0s (141 kB/s)
-Selecting previously unselected package ntpdate.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 338091 files and directories currently installed.)
-Preparing to unpack .../ntpdate_1%3a4.2.6.p5+dfsg-7+deb8u1_amd64.deb ...
-Unpacking ntpdate (1:4.2.6.p5+dfsg-7+deb8u1) ...
-Selecting previously unselected package lockfile-progs.
-Preparing to unpack .../lockfile-progs_0.1.17_amd64.deb ...
-Unpacking lockfile-progs (0.1.17) ...
-Processing triggers for man-db (2.7.0.2-5) ...
-Setting up ntpdate (1:4.2.6.p5+dfsg-7+deb8u1) ...
-Setting up lockfile-progs (0.1.17) ...
-17 Dec 05:30:32 ntpdate[15490]: no server suitable for synchronization found
- 
-[36mInstallation de dockers [0m
- 
-[36mL'interface PhpMyAdmin est disponible à l'adresse suivante : http://:1234 [0m
- 
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) Stack LAMP	      3) MariaDB	    5) Docker standalone
-2) Nginx-php-fqm      4) PhpMyAdmin	    6) Quitter (q|Q)
-Choix? [36mInstallation du container : Docker standalone. [0m
- 
-[36mTéléchargement des tools [0m
- 
-[36mInstallation de dockers [0m
- 
-[36mDockers est installé ! [0m
- 
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) Stack LAMP	      3) MariaDB	    5) Docker standalone
-2) Nginx-php-fqm      4) PhpMyAdmin	    6) Quitter (q|Q)
-Choix?  
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix? [36mInstallation du container : menu1. [0m
- 
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix? [36mInstallation du container : menu1. [0m
-Choix? [36mInstallation du container : menu2. [0m
-Choix? [36mInstallation du container : menu3. [0m
-Choix? Faute de frappe !
-Choix? Faute de frappe !
-Choix?  
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix? [36mInstallation du container : menu1. [0m
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix?  
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix? [36mInstallation du container : menu1. [0m
-1) sous menu1
-2) sous menu2
-3) Quitter (q|Q)
-Choix? [36mByebye [0m
-Choix? [36mInstallation du container : sous menu2. [0m
-Choix? [36mByebye [0m
-Choix? [36mInstallation du container : sous menu1. [0m
-Choix? [36mInstallation du container : sous menu2. [0m
-Choix? [36mByebye [0m
-Choix? [36mInstallation du container : sous menu1. [0m
-Choix? [36mInstallation du container : sous menu2. [0m
-Choix? [36mByebye [0m
-Choix? Faute de frappe !
-Choix?  
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix? [36mInstallation du container : menu1. [0m
-1) sous menu1
-2) sous menu2
-3) Quitter (q|Q)
-Choix? [36mByebye [0m
-Choix? [36mInstallation du container : menu2. [0m
-Choix?  
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix? [36mInstallation du container : menu3. [0m
-Choix? [36mInstallation du container : menu2. [0m
-Choix? [36mInstallation du container : menu1. [0m
-1) sous menu1
-2) sous menu2
-3) Quitter (q|Q)
-Choix? [36mByebye [0m
-[36m Retour au menu [0m
-Choix? [36mInstallation du container : menu2. [0m
-Choix? [36mInstallation du container : menu3. [0m
-Choix?  
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) menu1
-2) menu2
-3) menu3
-4) Quitter (q|Q)
-Choix? [36mInstallation du container : menu1. [0m
-1) sous menu1
-2) sous menu2
-3) Quitter (q|Q)
-Choix? [36mByebye [0m
-[36m Retour au menu [0m
- 
-[36mQuel Docker installer sur le serveur? [0m
- 
-1) Stack LAMP	      3) MariaDB	    5) Docker standalone
-2) Nginx-php-fqm      4) PhpMyAdmin	    6) Quitter (q|Q)
-Choix? 
