@@ -15,10 +15,10 @@ git clone https://github.com/gitbn/docker
 ### Containers
 
 Standalone :
-** Stack LAMP Centos **
+**Stack LAMP Centos**
 https://hub.docker.com/r/dockerfiles/centos-lamp/
 
-[https://hub.docker.com/r/dockerfiles/centos-lamp/](Stack LAMP Centos)
+[Stack LAMP Centos](https://hub.docker.com/r/dockerfiles/centos-lamp/)
 
 Distribué :
 ** nginx-php-fpm **
