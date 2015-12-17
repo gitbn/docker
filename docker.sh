@@ -38,7 +38,7 @@ PS3="Choix? "
 echo " "
 echo -e "\033[36mQuel Docker installer sur le serveur? \033[0m"
 echo " "
-select choix in "Stack LEMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
+select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
 	do 
 		case $REPLY in 
 			#choix: Installation de Stack LEMP
