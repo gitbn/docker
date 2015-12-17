@@ -2,7 +2,6 @@
 #stop si le script si une erreur 
 set -e
 
-<<<<<<< HEAD
 #function installation des tools
 toolsPackage(){
 	#pré requis
@@ -31,15 +30,12 @@ dockerPackage(){
 	service docker start
 }
 
-=======
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 #log stdout stderr dans log.txt
 (
 
 #Menu
 PS3="Choix? "
 echo " "
-<<<<<<< HEAD
 echo -e "\033[36mQuel Docker installer sur le serveur? \033[0m"
 echo " "
 select choix in "Stack LEMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
@@ -99,36 +95,11 @@ select choix in "Stack LEMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 
 		    echo " "
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
-=======
-echo -e "\033[32m Quel Docker installer sur le serveur? \033[0m"
-echo " "
-select choix in "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
-	do 
-		case $REPLY in 
-			#Choix 1 : Installation de Nginx-php-fqm
-		  1) echo -e "\033[32m Installation du container : $choix. \033[0m"
-			echo " "
-			echo -e "\033[32m Téléchargement des tools \033[0m"
-			chmod 755 $(pwd)/tools.sh
-		    $(pwd)/tools.sh
-
-			echo " "
-			echo -e "\033[32m Installation de dockers \033[0m"
-		    chmod 755 $(pwd)/docker.sh
-		    $(pwd)/docker.sh
-
-		    echo " "
-		    echo -e "\033[32m Pull du container, prenez un café le temps du téléchargement! \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    #https://hub.docker.com/r/richarvey/nginx-php-fpm/
 		    docker pull richarvey/nginx-php-fpm
 
 		    echo " "
-<<<<<<< HEAD
 		    echo -e "\033[36mLancement du container \033[0m"
-=======
-		    echo -e "\033[32m Lancement du container \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    #création d'un répertoire pour les sites web
 		    web="/dock/www/"
 		    mkdir -p $web
@@ -142,63 +113,35 @@ select choix in "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
 
 			#affichage des infos de connexion
 		    echo " "
-<<<<<<< HEAD
 		    echo -e "\033[36mNginx est disponible à l'adresse suivante : http://$iplocal:80 \033[0m"
 		 	echo " "
 		    echo -e "\033[36mFinito, placer votre site web dans $web \033[0m"
-=======
-		    echo -e "\033[32m Nginx est disponible à l'adresse suivante : http://$iplocal:80 \033[0m"
-		 	echo " "
-		    echo -e "\033[32m Finito, placer votre site web dans $web \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    break
 		    ;;
 
 		    ###################################################################
 
-<<<<<<< HEAD
 			#choix: Installation de MariaDB
 		  3) echo -e "\033[36mInstallation du container : $choix. \033[0m"
 			echo " "
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
-=======
-			#Choix 2 : Installation de MariaDB
-		  2) echo -e "\033[32m Installation du container : $choix. \033[0m"
-			echo " "
-			echo -e "\033[32m Téléchargement des tools \033[0m"
-			chmod 755 $(pwd)/tools.sh
-		    $(pwd)/tools.sh
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    #Outil pour génerer les passwords
 			apt-get install -y pwgen
 
 			echo " "
-<<<<<<< HEAD
 			echo -e "\033[36mInstallation de dockers \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
 		    echo " "
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
-=======
-			echo -e "\033[32m Installation de dockers \033[0m"
-		    chmod 755 $(pwd)/docker.sh
-		    $(pwd)/docker.sh
-
-		    echo " "
-		    echo -e "\033[32m Pull du container, prenez un café le temps du téléchargement! \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    #https://hub.docker.com/r/paintedfox/mariadb/
 		    docker pull paintedfox/mariadb
 
 		    echo " "
-<<<<<<< HEAD
 		    echo -e "\033[36mLancement du container \033[0m"
-=======
-		    echo -e "\033[32m Lancement du container \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    #création d'un repertoire pour la base de données
 		    db="/dock/db/"
 		    mkdir -p $db
@@ -211,17 +154,12 @@ select choix in "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
 
 		    #affichage des infos de connexion
 		    echo " "
-<<<<<<< HEAD
 		    echo -e "\033[36mLes identifiants de la bdd sont rootsql / $dockerpwd \033[0m"
-=======
-		    echo -e "\033[32m Les identifiants de la bdd sont rootsql / $dockerpwd \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    break
 		    ;;
 
 		    ###################################################################
 		    
-<<<<<<< HEAD
 			#choix: Installation de PhpMyAdmin
 		  4) echo -e "\033[36mInstallation du container : $choix. \033[0m"
 			echo " "
@@ -236,31 +174,11 @@ select choix in "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
 
 		    echo " "
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
-=======
-			#Choix 3 : Installation de PhpMyAdmin
-		  3) echo -e "\033[32m Installation du container : $choix. \033[0m"
-			echo " "
-			echo -e "\033[32m Téléchargement des tools \033[0m"
-			chmod 755 $(pwd)/tools.sh
-		    $(pwd)/tools.sh
-
-			echo " "
-			echo -e "\033[32m Installation de dockers \033[0m"
-		    chmod 755 $(pwd)/docker.sh
-		    $(pwd)/docker.sh
-
-		    echo " "
-		    echo -e "\033[32m Pull du container, prenez un café le temps du téléchargement! \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    #https://hub.docker.com/r/nazarpc/phpmyadmin/
 		    docker pull nazarpc/phpmyadmin
 
 		    echo " "
-<<<<<<< HEAD
 		    echo -e "\033[36mLancement du container \033[0m"
-=======
-		    echo -e "\033[32m Lancement du container \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    #demande l'adresse IP du serveur avec la bdd
 		    read -p  "Quelle est l'IP  de la base de donnée?" ip
 		    #exécute docker avec le port 1234 redirigé sur le port 80
@@ -271,29 +189,16 @@ select choix in "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
 
 		    #affichage des infos de connexion
 		    echo " "
-<<<<<<< HEAD
 		    echo -e "\033[36mL'interface PhpMyAdmin est disponible à l'adresse suivante : http://$iplocal:1234 \033[0m"
-=======
-		    echo -e "\033[32m L'interface PhpMyAdmin est disponible à l'adresse suivante : http://$iplocal:1234 \033[0m"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		    break
 
 			###################################################################
 
 			;;
-<<<<<<< HEAD
 			#choix: quit avec la touche 4,Q ou q
 		  5|Q*|q*) echo -e "\033[36mByebye \033[0m"
-=======
-			#quit avec la touche 4,Q ou q
-		  4|Q*|q*) echo -e "\033[32m Byebye"
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
 		     break;; 
 		  *) echo "Faute de frappe !";;
 	esac
 done
-<<<<<<< HEAD
 ) 2>&1 | tee -a log.txt
-=======
-) 2>&1 | tee -a log.txt
->>>>>>> 130196f19d5945c09747f4c47253961bb52f9f21
