@@ -19,8 +19,8 @@ Standalone :
 
 
 Distribué :
-[Nginx-php-fpm](https://hub.docker.com/r/richarvey/nginx-php-fpm/)
-[Mariadb](https://hub.docker.com/r/paintedfox/mariadb/)
+[Nginx-php-fpm](https://hub.docker.com/r/richarvey/nginx-php-fpm/)<br/>;
+[Mariadb](https://hub.docker.com/r/paintedfox/mariadb/)<br/>;
 [PhpMyAdmin](https://hub.docker.com/r/nazarpc/phpmyadmin/)
 
 ### Automatisation
