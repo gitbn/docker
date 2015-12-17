@@ -38,18 +38,18 @@ PS3="Choix? "
 echo " "
 echo -e "\033[36mQuel Docker installer sur le serveur? \033[0m"
 echo " "
-select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|Q)";
+select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker standalone" "Quitter (q|Q)";
 	do 
 		case $REPLY in 
 			#choix: Installation de Stack LAMP
-		  1) echo -e "\033[36mInstallation du container : $choix. \033[0m"
+		1)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
 			echo " "
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 
 			echo " "
-			echo -e "\033[36mInstallation de dockers \033[0m"
+			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
@@ -82,14 +82,14 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 		    ###################################################################
 
 			#choix: Installation de Nginx-php-fqm
-		  2) echo -e "\033[36mInstallation du container : $choix. \033[0m"
+		2)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
 			echo " "
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 
 			echo " "
-			echo -e "\033[36mInstallation de dockers \033[0m"
+			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
@@ -122,7 +122,7 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 		    ###################################################################
 
 			#choix: Installation de MariaDB
-		  3) echo -e "\033[36mInstallation du container : $choix. \033[0m"
+		3)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
 			echo " "
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
@@ -131,7 +131,7 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 			apt-get install -y pwgen
 
 			echo " "
-			echo -e "\033[36mInstallation de dockers \033[0m"
+			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
@@ -161,14 +161,14 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 		    ###################################################################
 		    
 			#choix: Installation de PhpMyAdmin
-		  4) echo -e "\033[36mInstallation du container : $choix. \033[0m"
+		4)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
 			echo " "
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 
 			echo " "
-			echo -e "\033[36mInstallation de dockers \033[0m"
+			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
@@ -191,12 +191,31 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "quitter (q|
 		    echo " "
 		    echo -e "\033[36mL'interface PhpMyAdmin est disponible à l'adresse suivante : http://$iplocal:1234 \033[0m"
 		    break
+		    ;;
 
 			###################################################################
 
-			;;
+		5)	echo -e "\033[36mInstallation de : $choix. \033[0m"
+			echo " "
+			echo -e "\033[36mTéléchargement des tools \033[0m"
+			#appel à la fonction tools
+			toolsPackage
+
+			echo " "
+			echo -e "\033[36mInstallation de docker \033[0m"
+		    #appel à la fonction docker
+			dockerPackage
+
+		    #affichage des infos de connexion
+		    echo " "
+		    echo -e "\033[36mDockers est installé ! \033[0m"
+		    break
+		    ;;
+		    
+			###################################################################
+
 			#choix: quit avec la touche 4,Q ou q
-		  5|Q*|q*) echo -e "\033[36mByebye \033[0m"
+		6|Q*|q*) echo -e "\033[36mByebye \033[0m"
 		     break;; 
 		  *) echo "Faute de frappe !";;
 	esac
