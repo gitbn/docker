@@ -188,3 +188,9 @@ Choix? [36mInstallation du container : menu1. [0m
 3) Quitter (q|Q)
 Choix? [36mByebye [0m
 [36m Retour au menu [0m
+ 
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) Stack LAMP	      3) MariaDB	    5) Docker standalone
+2) Nginx-php-fqm      4) PhpMyAdmin	    6) Quitter (q|Q)
+Choix? 
