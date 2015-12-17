@@ -17,7 +17,6 @@ git clone https://github.com/gitbn/docker
 Standalone :
 [Stack LAMP Centos](https://hub.docker.com/r/dockerfiles/centos-lamp/)
 
-
 Distribué :
 [Nginx-php-fpm](https://hub.docker.com/r/richarvey/nginx-php-fpm/), 
 [Mariadb](https://hub.docker.com/r/paintedfox/mariadb/), 
