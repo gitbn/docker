@@ -4,7 +4,7 @@ Docker
 
 ### Utilisation
 
-compatible avec debian Jessie
+Mise en place d'infrastructure docker avec debian Jessie.
 
 ```
 apt-get install git
@@ -15,15 +15,13 @@ git clone https://github.com/gitbn/docker
 ### Containers
 
 Standalone :
-**Stack LAMP Centos**
-https://hub.docker.com/r/dockerfiles/centos-lamp/
-
 [Stack LAMP Centos](https://hub.docker.com/r/dockerfiles/centos-lamp/)
 
+
 Distribué :
-** nginx-php-fpm **
-** MariaDB **
-** PhpMyAdmin **
+[Nginx-php-fpm](https://hub.docker.com/r/richarvey/nginx-php-fpm/)
+[Mariadb](https://hub.docker.com/r/paintedfox/mariadb/)
+[PhpMyAdmin](https://hub.docker.com/r/nazarpc/phpmyadmin/)
 
 ### Automatisation
 Installation de docker pour Debian Jessie
