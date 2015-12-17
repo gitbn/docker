@@ -6,7 +6,7 @@ set -e
 toolsPackage(){
 	#Outils de base
 	apt-get update
-	apt-get install -y nano curl wget ntpdate
+	apt-get install -y nano curl wget ntpdate apt-transport-https
 
 	#time
 	#continue quand même si une erreur de synchro est rencontré (ex: blocage port 123)
@@ -18,7 +18,6 @@ dockerPackage(){
 
 	#Update
 	apt-get update
-	apt-get install -y apt-transport-https 
 
 	#Dockers repo
 	apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
@@ -211,7 +210,7 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 		    echo -e "\033[36mDockers est installé ! \033[0m"
 		    break
 		    ;;
-		    
+
 			###################################################################
 
 			#choix: quit avec la touche 4,Q ou q

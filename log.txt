@@ -92,4 +92,99 @@ Choix? [36mInstallation du container : Docker standalone. [0m
  
 1) Stack LAMP	      3) MariaDB	    5) Docker standalone
 2) Nginx-php-fqm      4) PhpMyAdmin	    6) Quitter (q|Q)
-Choix? 
+Choix?  
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix? [36mInstallation du container : menu1. [0m
+ 
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix? [36mInstallation du container : menu1. [0m
+Choix? [36mInstallation du container : menu2. [0m
+Choix? [36mInstallation du container : menu3. [0m
+Choix? Faute de frappe !
+Choix? Faute de frappe !
+Choix?  
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix? [36mInstallation du container : menu1. [0m
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix?  
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix? [36mInstallation du container : menu1. [0m
+1) sous menu1
+2) sous menu2
+3) Quitter (q|Q)
+Choix? [36mByebye [0m
+Choix? [36mInstallation du container : sous menu2. [0m
+Choix? [36mByebye [0m
+Choix? [36mInstallation du container : sous menu1. [0m
+Choix? [36mInstallation du container : sous menu2. [0m
+Choix? [36mByebye [0m
+Choix? [36mInstallation du container : sous menu1. [0m
+Choix? [36mInstallation du container : sous menu2. [0m
+Choix? [36mByebye [0m
+Choix? Faute de frappe !
+Choix?  
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix? [36mInstallation du container : menu1. [0m
+1) sous menu1
+2) sous menu2
+3) Quitter (q|Q)
+Choix? [36mByebye [0m
+Choix? [36mInstallation du container : menu2. [0m
+Choix?  
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix? [36mInstallation du container : menu3. [0m
+Choix? [36mInstallation du container : menu2. [0m
+Choix? [36mInstallation du container : menu1. [0m
+1) sous menu1
+2) sous menu2
+3) Quitter (q|Q)
+Choix? [36mByebye [0m
+[36m Retour au menu [0m
+Choix? [36mInstallation du container : menu2. [0m
+Choix? [36mInstallation du container : menu3. [0m
+Choix?  
+[36mQuel Docker installer sur le serveur? [0m
+ 
+1) menu1
+2) menu2
+3) menu3
+4) Quitter (q|Q)
+Choix? [36mInstallation du container : menu1. [0m
+1) sous menu1
+2) sous menu2
+3) Quitter (q|Q)
+Choix? [36mByebye [0m
+[36m Retour au menu [0m
