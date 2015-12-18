@@ -3454,3 +3454,227 @@ Choix?
 2) Installation de Docker (Debian)  5) Samba
 3) Stack LAMP			    6) Exit (q|Q)
 Choix? [36mBye.. [0m
+
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    18 minutes ago      Up 8 minutes        22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker () ?bash-4.1# ifconfig
+eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02  
+          inet addr:172.17.0.2  Bcast:0.0.0.0  Mask:255.255.0.0
+          inet6 addr: fe80::42:acff:fe11:2/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:19 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:8 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:3767 (3.6 KiB)  TX bytes:648 (648.0 b)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:0 (0.0 b)  TX bytes:0 (0.0 b)
+
+bash-4.1# exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    19 minutes ago      Up 8 minutes        22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [3;J[H[2J1) Nginx-php-fqm
+2) MariaDB
+3) PhpMyAdmin
+4) Back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    29 minutes ago      Up 19 minutes       0.0.0.0:80->80/tcp, 22/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker () ?bash-4.1# exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    29 minutes ago      Up 19 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker (lamp) ?bash-4.1# exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    30 minutes ago      Up 19 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                              PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    30 minutes ago      Exited (0) Less than a second ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (lamp) ?Error response from daemon: no such id: 3
+Error: failed to restart containers: [3]
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                      PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    30 minutes ago      Exited (0) 16 seconds ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker (3) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                      PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    30 minutes ago      Exited (0) 37 seconds ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                  PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    30 minutes ago      Up Less than a second   22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker (lamp) ?2
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                              PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    31 minutes ago      Exited (0) Less than a second ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (2) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                  PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    31 minutes ago      Up Less than a second   22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                              PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    31 minutes ago      Exited (0) Less than a second ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                  PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    31 minutes ago      Up Less than a second   22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) Back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) LEMP version Distribuée
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) LEMP version distribuée
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? 

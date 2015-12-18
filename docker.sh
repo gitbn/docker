@@ -1,40 +1,43 @@
 #!/bin/bash 
-#stop si le script si une erreur 
+#stop le script si on rencontre une erreur 
 set -e
 
-#function installation des tools
+#installation des tools
 toolsPackage(){
-    #Outils de base
+    #outils de base
     apt-get update
     apt-get install -y nano curl wget ntpdate apt-transport-https
 
     #time
-    #continue quand même si une erreur de synchro est rencontré (ex: blocage port 123)
+    #continue même si une erreur de synchro est rencontrée (ex: blocage port 123)
     ntpdate -u ntpsophia.sophia.cnrs.fr || true
     }
 
+#installation de Docker
 dockerPackage(){
-    #Script pour Debian Jessie
+    #note : script pour Debian
 
-    #Update
+    #update
     apt-get update
 
-    #Dockers repo
+    #repo de Docker
     apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
     echo "deb https://apt.dockerproject.org/repo debian-jessie main" > /etc/apt/sources.list.d/docker.list
     apt-get update
 
-    #Install Dockers
+    #install Docker
     apt-get install -y docker-engine
     service docker start
 }
 
+#affiche le statut des containers
 dockerps(){
     echo
     docker ps -a
     echo
 }
 
+#prompt pour renseigner l'id ou le nom du docker
 promptdocker(){
     echo
     echo -e "\033[36m$choix \033[0m"
@@ -52,10 +55,10 @@ do
     echo
     echo -e "\033[36mDocker \033[0m"
     PS3='Choix? '
-    select choix in "Gestion des dockers" "Installation de Docker (Debian)" "Stack LAMP" "Distribué" "Samba" "Exit (q|Q)";
+    select choix in "Gestion des dockers" "Installation de Docker (Debian)" "Stack LAMP" "LEMP version distribuée" "Samba" "Exit (q|Q)";
         do
         case $REPLY in
-        #gestion des dockers
+        #gestion des containers
         1)  back=0
             clear
             while true
@@ -65,7 +68,9 @@ do
                     select choix in "Bash" "Stop" "Restart" "Remove" "Back";
                         do
                         case $REPLY in
-                        1)  promptdocker
+                        1)  #appel le prompt
+                            promptdocker
+                            #exécute un bash dans le container
                             docker exec -it $dockername bash || true 
                             echo
                             break
@@ -74,6 +79,7 @@ do
                             ###################################################################
 
                         2)  promptdocker
+                            #stop le container
                             docker stop $dockername || true
                             echo
                             break
@@ -82,6 +88,7 @@ do
                             ###################################################################
 
                         3)  promptdocker
+                            #démarre le container
                             docker restart $dockername || true
                             echo
                             break
@@ -90,6 +97,7 @@ do
                             ###################################################################
 
                         4)  promptdocker
+                            #efface un container
                             docker stop $dockername && docker rm $dockername || true
                             echo
                             break
@@ -116,7 +124,7 @@ do
 
             ###################################################################
 
-        #choix: Installation de Docker
+        #choix: installation de Docker
         2)  echo -e "\033[36mInstallation de : $choix. \033[0m"
             echo
             echo -e "\033[36mTéléchargement des tools \033[0m"
@@ -137,7 +145,7 @@ do
 
             ###################################################################
 
-        #choix: Installation des containers LAMP
+        #choix: installation du container LAMP
         3)  echo -e "\033[36m$choix \033[0m"
             echo
             echo -e "\033[36mTéléchargement des tools \033[0m"
@@ -178,7 +186,7 @@ do
 
             ###################################################################
 
-        #Version distribué
+        #version distribuée
         4)  back=0
             clear
             while true
