@@ -5,6 +5,8 @@ set -e
 #installation des tools
 toolsPackage(){
     #outils de base
+    echo
+    echo -e "\033[36mTéléchargement des tools \033[0m"
     apt-get update
     apt-get install -y nano curl wget ntpdate apt-transport-https
 
@@ -16,7 +18,8 @@ toolsPackage(){
 #installation de Docker
 dockerPackage(){
     #note : script pour Debian
-
+    echo
+    echo -e "\033[36mInstallation de docker \033[0m"
     #update
     apt-get update
 
@@ -125,14 +128,10 @@ do
             ###################################################################
 
         #choix: installation de Docker
-        2)  echo -e "\033[36mInstallation de : $choix. \033[0m"
-            echo
-            echo -e "\033[36mTéléchargement des tools \033[0m"
+        2)  echo -e "\033[36mInstallation de : $choix. \033[0m"            
             #appel à la fonction tools
             toolsPackage
 
-            echo
-            echo -e "\033[36mInstallation de docker \033[0m"
             #appel à la fonction docker
             dockerPackage
 
@@ -147,13 +146,9 @@ do
 
         #choix: installation du container LAMP
         3)  echo -e "\033[36m$choix \033[0m"
-            echo
-            echo -e "\033[36mTéléchargement des tools \033[0m"
             #appel à la fonction tools
             toolsPackage
 
-            echo
-            echo -e "\033[36mInstallation de docker \033[0m"
             #appel à la fonction docker
             dockerPackage
 
@@ -197,13 +192,9 @@ do
                         case $REPLY in
                         #Nginx-php-fqm
                         1)  echo -e "\033[36mInstallation du container : $choix. \033[0m"
-                            echo
-                            echo -e "\033[36mTéléchargement des tools \033[0m"
                             #appel à la fonction tools
                             toolsPackage
 
-                            echo
-                            echo -e "\033[36mInstallation de docker \033[0m"
                             #appel à la fonction docker
                             dockerPackage
 
@@ -237,17 +228,14 @@ do
 
                         #MariaDB
                         2)  echo -e "\033[36mInstallation du container : $choix. \033[0m"
-                            echo
-                            echo -e "\033[36mTéléchargement des tools \033[0m"
                             #appel à la fonction tools
                             toolsPackage
-                            #Outil pour génerer les passwords
-                            apt-get install -y pwgen
 
-                            echo
-                            echo -e "\033[36mInstallation de docker \033[0m"
                             #appel à la fonction docker
                             dockerPackage
+                            
+                            #Outil pour génerer les passwords
+                            apt-get install -y pwgen
 
                             echo
                             echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
@@ -276,13 +264,9 @@ do
 
                         #PhpMyAdmin
                         3)  echo -e "\033[36mInstallation du container : $choix. \033[0m"
-                            echo
-                            echo -e "\033[36mTéléchargement des tools \033[0m"
                             #appel à la fonction tools
                             toolsPackage
 
-                            echo
-                            echo -e "\033[36mInstallation de docker \033[0m"
                             #appel à la fonction docker
                             dockerPackage
 
