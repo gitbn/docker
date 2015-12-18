@@ -2854,3 +2854,603 @@ CONTAINER ID        IMAGE                     COMMAND             CREATED       
 4) Remove
 5) back
 Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Samba
+2) Installation de Docker (Debian)  5) Exit (q|Q)
+3) Stack LAMP
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    About an hour ago   Up 44 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker? ()docker: "exec" requires a minimum of 2 arguments.
+See 'docker exec --help'.
+
+Usage:	docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    About an hour ago   Up 44 minutes       0.0.0.0:80->80/tcp, 22/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker? ()bash-4.1# exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    About an hour ago   Up 45 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker? (lamp)bash-4.1# exit
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    About an hour ago   Up 45 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker? (lamp)
+[36mDocker [0m
+1) Gestion des dockers		    4) Samba
+2) Installation de Docker (Debian)  5) Exit (q|Q)
+3) Stack LAMP
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up 49 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker () ?docker: "exec" requires a minimum of 2 arguments.
+See 'docker exec --help'.
+
+Usage:	docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up 49 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker () ?bash-4.1# 1 exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up 50 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker (lamp) ?
+bash-4.1# 
+bash-4.1# exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up 50 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Samba
+2) Installation de Docker (Debian)  5) Exit (q|Q)
+3) Stack LAMP
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up 52 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker () ?docker: "exec" requires a minimum of 2 arguments.
+See 'docker exec --help'.
+
+Usage:	docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up 52 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker () ?bash-4.1# exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up 52 minutes       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                              PORTS               NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Exited (0) Less than a second ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                  PORTS                        NAMES
+7a07b421bc6c        dockerfiles/centos-lamp   "supervisord -n"    2 hours ago         Up Less than a second   22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mRemove [0m
+Nom ou ID du docker (lamp) ?lamp
+lamp
+
+
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Samba
+2) Installation de Docker (Debian)  5) Exit (q|Q)
+3) Stack LAMP
+Choix? [36mStack LAMP [0m
+
+[36mTéléchargement des tools [0m
+Get:1 https://apt.dockerproject.org debian-jessie InRelease [454 B]
+Ign https://apt.dockerproject.org debian-jessie InRelease
+Hit https://apt.dockerproject.org debian-jessie Release.gpg
+Hit http://http.kali.org sana InRelease
+Hit https://apt.dockerproject.org debian-jessie Release
+Hit http://security.kali.org sana/updates InRelease
+Hit https://apt.dockerproject.org debian-jessie/main amd64 Packages
+Hit http://http.kali.org sana-proposed-updates InRelease
+Get:2 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Hit http://security.kali.org sana/updates/main amd64 Packages
+Hit http://http.kali.org sana/main amd64 Packages
+Get:3 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Hit http://security.kali.org sana/updates/contrib amd64 Packages
+Hit http://http.kali.org sana/non-free amd64 Packages
+Get:4 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Hit http://security.kali.org sana/updates/non-free amd64 Packages
+Hit http://http.kali.org sana/contrib amd64 Packages
+Get:5 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Get:6 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:7 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Get:8 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:9 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Hit http://http.kali.org sana-proposed-updates/main amd64 Packages
+Get:10 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Ign https://apt.dockerproject.org debian-jessie/main Translation-en_US
+Hit http://http.kali.org sana-proposed-updates/contrib amd64 Packages
+Get:11 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Ign https://apt.dockerproject.org debian-jessie/main Translation-en
+Hit http://http.kali.org sana-proposed-updates/non-free amd64 Packages
+Ign http://security.kali.org sana/updates/contrib Translation-en_US
+Ign http://security.kali.org sana/updates/contrib Translation-en
+Ign http://security.kali.org sana/updates/main Translation-en_US
+Ign http://security.kali.org sana/updates/main Translation-en
+Ign http://security.kali.org sana/updates/non-free Translation-en_US
+Ign http://security.kali.org sana/updates/non-free Translation-en
+Ign http://http.kali.org sana/contrib Translation-en_US
+Ign http://http.kali.org sana/contrib Translation-en
+Ign http://http.kali.org sana/main Translation-en_US
+Ign http://http.kali.org sana/main Translation-en
+Ign http://http.kali.org sana/non-free Translation-en_US
+Ign http://http.kali.org sana/non-free Translation-en
+Ign http://http.kali.org sana-proposed-updates/contrib Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/contrib Translation-en
+Ign http://http.kali.org sana-proposed-updates/main Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/main Translation-en
+Ign http://http.kali.org sana-proposed-updates/non-free Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/non-free Translation-en
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apt-transport-https is already the newest version.
+curl is already the newest version.
+nano is already the newest version.
+wget is already the newest version.
+ntpdate is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 127 not upgraded.
+18 Dec 07:36:43 ntpdate[1432]: no server suitable for synchronization found
+
+[36mInstallation de docker [0m
+Get:1 https://apt.dockerproject.org debian-jessie InRelease [454 B]
+Ign https://apt.dockerproject.org debian-jessie InRelease
+Hit http://http.kali.org sana InRelease
+Hit https://apt.dockerproject.org debian-jessie Release.gpg
+Hit https://apt.dockerproject.org debian-jessie Release
+Hit http://security.kali.org sana/updates InRelease
+Hit https://apt.dockerproject.org debian-jessie/main amd64 Packages
+Hit http://http.kali.org sana-proposed-updates InRelease
+Get:2 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:3 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Hit http://http.kali.org sana/main amd64 Packages
+Hit http://security.kali.org sana/updates/main amd64 Packages
+Get:4 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:5 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Get:6 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:7 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Get:8 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:9 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Get:10 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Ign https://apt.dockerproject.org debian-jessie/main Translation-en_US
+Hit http://http.kali.org sana/non-free amd64 Packages
+Hit http://security.kali.org sana/updates/contrib amd64 Packages
+Hit http://http.kali.org sana/contrib amd64 Packages
+Get:11 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Ign https://apt.dockerproject.org debian-jessie/main Translation-en
+Hit http://security.kali.org sana/updates/non-free amd64 Packages
+Hit http://http.kali.org sana-proposed-updates/main amd64 Packages
+Hit http://http.kali.org sana-proposed-updates/contrib amd64 Packages
+Hit http://http.kali.org sana-proposed-updates/non-free amd64 Packages
+Ign http://security.kali.org sana/updates/contrib Translation-en_US
+Ign http://security.kali.org sana/updates/contrib Translation-en
+Ign http://security.kali.org sana/updates/main Translation-en_US
+Ign http://security.kali.org sana/updates/main Translation-en
+Ign http://security.kali.org sana/updates/non-free Translation-en_US
+Ign http://security.kali.org sana/updates/non-free Translation-en
+Ign http://http.kali.org sana/contrib Translation-en_US
+Ign http://http.kali.org sana/contrib Translation-en
+Ign http://http.kali.org sana/main Translation-en_US
+Ign http://http.kali.org sana/main Translation-en
+Ign http://http.kali.org sana/non-free Translation-en_US
+Ign http://http.kali.org sana/non-free Translation-en
+Ign http://http.kali.org sana-proposed-updates/contrib Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/contrib Translation-en
+Ign http://http.kali.org sana-proposed-updates/main Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/main Translation-en
+Ign http://http.kali.org sana-proposed-updates/non-free Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/non-free Translation-en
+Reading package lists...
+Executing: gpg --ignore-time-conflict --no-options --no-default-keyring --homedir /tmp/tmp.sqLmROXXzy --no-auto-check-trustdb --trust-model always --keyring /etc/apt/trusted.gpg --primary-keyring /etc/apt/trusted.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-security-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-jessie-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-squeeze-stable.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-automatic.gpg --keyring /etc/apt/trusted.gpg.d/debian-archive-wheezy-stable.gpg --keyring /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+gpg: requesting key 2C52609D from hkp server p80.pool.sks-keyservers.net
+gpg: key 2C52609D: "Docker Release Tool (releasedocker) <docker@docker.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+Hit http://security.kali.org sana/updates InRelease
+Hit http://http.kali.org sana InRelease
+Hit http://http.kali.org sana-proposed-updates InRelease
+Get:1 https://apt.dockerproject.org debian-jessie InRelease [454 B]
+Ign https://apt.dockerproject.org debian-jessie InRelease
+Hit http://security.kali.org sana/updates/main amd64 Packages
+Hit https://apt.dockerproject.org debian-jessie Release.gpg
+Hit https://apt.dockerproject.org debian-jessie Release
+Hit https://apt.dockerproject.org debian-jessie/main amd64 Packages
+Hit http://http.kali.org sana/main amd64 Packages
+Get:2 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Hit http://security.kali.org sana/updates/contrib amd64 Packages
+Hit http://http.kali.org sana/non-free amd64 Packages
+Get:3 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Hit http://security.kali.org sana/updates/non-free amd64 Packages
+Hit http://http.kali.org sana/contrib amd64 Packages
+Get:4 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:5 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Get:6 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:7 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Get:8 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Get:9 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Hit http://http.kali.org sana-proposed-updates/main amd64 Packages
+Get:10 https://apt.dockerproject.org debian-jessie/main Translation-en_US [454 B]
+Ign https://apt.dockerproject.org debian-jessie/main Translation-en_US
+Get:11 https://apt.dockerproject.org debian-jessie/main Translation-en [454 B]
+Ign https://apt.dockerproject.org debian-jessie/main Translation-en
+Hit http://http.kali.org sana-proposed-updates/contrib amd64 Packages
+Hit http://http.kali.org sana-proposed-updates/non-free amd64 Packages
+Ign http://security.kali.org sana/updates/contrib Translation-en_US
+Ign http://security.kali.org sana/updates/contrib Translation-en
+Ign http://security.kali.org sana/updates/main Translation-en_US
+Ign http://security.kali.org sana/updates/main Translation-en
+Ign http://security.kali.org sana/updates/non-free Translation-en_US
+Ign http://security.kali.org sana/updates/non-free Translation-en
+Ign http://http.kali.org sana/contrib Translation-en_US
+Ign http://http.kali.org sana/contrib Translation-en
+Ign http://http.kali.org sana/main Translation-en_US
+Ign http://http.kali.org sana/main Translation-en
+Ign http://http.kali.org sana/non-free Translation-en_US
+Ign http://http.kali.org sana/non-free Translation-en
+Ign http://http.kali.org sana-proposed-updates/contrib Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/contrib Translation-en
+Ign http://http.kali.org sana-proposed-updates/main Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/main Translation-en
+Ign http://http.kali.org sana-proposed-updates/non-free Translation-en_US
+Ign http://http.kali.org sana-proposed-updates/non-free Translation-en
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+docker-engine is already the newest version.
+0 upgraded, 0 newly installed, 0 to remove and 127 not upgraded.
+
+[36mPull du container, prenez un café le temps du téléchargement! [0m
+Using default tag: latest
+latest: Pulling from dockerfiles/centos-lamp
+Digest: sha256:6cf2fd73b0eecf601c5367b59652c16dffafd3d9710915f84c3a187ca17813ae
+Status: Image is up to date for dockerfiles/centos-lamp:latest
+
+[36mLancement du container [0m
+229b11a579ea922bc1d13ad0669bc16bcff6e2ca020cab7d5b0c8c055321fa3d
+
+[36mApache est disponible à l'adresse suivante : http://10.158.167.20:80 [0m
+
+[36mFinito, placer votre site web dans /dock/www/ [0m
+
+
+[36mDocker [0m
+1) Gestion des dockers		    4) Samba
+2) Installation de Docker (Debian)  5) Exit (q|Q)
+3) Stack LAMP
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    23 seconds ago      Up 22 seconds       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker (lamp) ?bash-4.1# exit
+exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    30 seconds ago      Up 29 seconds       22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                              PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    32 seconds ago      Exited (0) Less than a second ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (lamp) ?Error response from daemon: no such id: 3
+Error: failed to restart containers: [3]
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                      PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    43 seconds ago      Exited (0) 11 seconds ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mBash [0m
+Nom ou ID du docker (3) ?Error response from daemon: no such id: exit
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                      PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    54 seconds ago      Exited (0) 22 seconds ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker (exit) ?Error response from daemon: no such id: exit
+Error: failed to stop containers: [exit]
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                      PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    56 seconds ago      Exited (0) 23 seconds ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Samba
+2) Installation de Docker (Debian)  5) Exit (q|Q)
+3) Stack LAMP
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED              STATUS                      PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    About a minute ago   Exited (0) 34 seconds ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (exit) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED              STATUS                  PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    About a minute ago   Up Less than a second   22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Samba
+2) Installation de Docker (Debian)  5) Exit (q|Q)
+3) Stack LAMP
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [3;J[H[2J1) Nginx-php-fqm
+2) MariaDB
+3) PhpMyAdmin
+4) back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [3;J[H[2J1) Nginx-php-fqm
+2) MariaDB
+3) PhpMyAdmin
+4) back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [3;J[H[2J1) Nginx-php-fqm
+2) MariaDB
+3) PhpMyAdmin
+4) back
+Choix? [36mInstallation du container : Nginx-php-fqm. [0m
+
+[36mTéléchargement des tools [0m
+
+[36mInstallation de docker [0m
+
+[36mPull du container, prenez un café le temps du téléchargement! [0m
+
+[36mLancement du container [0m
+
+[36mNginx est disponible à l'adresse suivante : http://10.158.167.20:80 [0m
+
+[36mFinito, placer votre site web dans /dock/www/ [0m
+1) Nginx-php-fqm
+2) MariaDB
+3) PhpMyAdmin
+4) back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [3;J[H[2J
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS              PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    10 minutes ago      Up 8 minutes        22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mStop [0m
+Nom ou ID du docker () ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                              PORTS               NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    10 minutes ago      Exited (0) Less than a second ago                       lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mRestart [0m
+Nom ou ID du docker (lamp) ?lamp
+
+
+CONTAINER ID        IMAGE                     COMMAND             CREATED             STATUS                  PORTS                        NAMES
+229b11a579ea        dockerfiles/centos-lamp   "supervisord -n"    10 minutes ago      Up Less than a second   22/tcp, 0.0.0.0:80->80/tcp   lamp
+
+1) Bash
+2) Stop
+3) Restart
+4) Remove
+5) back
+Choix? 
+[36mDocker [0m
+1) Gestion des dockers		    4) Distribué
+2) Installation de Docker (Debian)  5) Samba
+3) Stack LAMP			    6) Exit (q|Q)
+Choix? [36mBye.. [0m
