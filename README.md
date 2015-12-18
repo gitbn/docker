@@ -10,6 +10,10 @@ Mise en place d'infrastructure docker pour système à base de Debian.
 apt-get install git
 git clone https://github.com/gitbn/docker
 ./docker/docker.sh
+
+ou
+
+apt-get install git && git clone https://github.com/gitbn/docker && ./docker/docker.sh
 ```
 
 ### Containers
