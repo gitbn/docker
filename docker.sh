@@ -34,30 +34,30 @@ dockerPackage(){
 
 #Menu
 PS3="Choix? "
-echo " "
+echo
 echo -e "\033[36mQuel Docker installer sur le serveur? \033[0m"
-echo " "
+echo
 select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker standalone" "Quitter (q|Q)";
 	do 
 		case $REPLY in 
 			#choix: Installation de Stack LAMP
 		1)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
-			echo " "
+			echo
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 
-			echo " "
+			echo
 			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
 		    #https://hub.docker.com/r/dockerfiles/centos-lamp/
 		    docker pull dockerfiles/centos-lamp
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mLancement du container \033[0m"
 		    #création d'un répertoire pour les sites web
 		    stack="/dock/www/"
@@ -71,9 +71,9 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 		    iplocal=$(ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}')
 
 			#affichage des infos de connexion
-		    echo " "
-		    echo -e "\033[36mNginx est disponible à l'adresse suivante : http://$iplocal:80 \033[0m"
-		 	echo " "
+		    echo
+		    echo -e "\033[36mApache est disponible à l'adresse suivante : http://$iplocal:80 \033[0m"
+		 	echo
 		    echo -e "\033[36mFinito, placer votre site web dans $stack \033[0m"
 		    break
 		    ;;
@@ -82,22 +82,22 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 
 			#choix: Installation de Nginx-php-fqm
 		2)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
-			echo " "
+			echo
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 
-			echo " "
+			echo
 			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
 		    #https://hub.docker.com/r/richarvey/nginx-php-fpm/
 		    docker pull richarvey/nginx-php-fpm
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mLancement du container \033[0m"
 		    #création d'un répertoire pour les sites web
 		    web="/dock/www/"
@@ -111,9 +111,9 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 		    iplocal=$(ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}')
 
 			#affichage des infos de connexion
-		    echo " "
+		    echo
 		    echo -e "\033[36mNginx est disponible à l'adresse suivante : http://$iplocal:80 \033[0m"
-		 	echo " "
+		 	echo
 		    echo -e "\033[36mFinito, placer votre site web dans $web \033[0m"
 		    break
 		    ;;
@@ -122,24 +122,24 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 
 			#choix: Installation de MariaDB
 		3)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
-			echo " "
+			echo
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 		    #Outil pour génerer les passwords
 			apt-get install -y pwgen
 
-			echo " "
+			echo
 			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
 		    #https://hub.docker.com/r/paintedfox/mariadb/
 		    docker pull paintedfox/mariadb
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mLancement du container \033[0m"
 		    #création d'un repertoire pour la base de données
 		    db="/dock/db/"
@@ -152,7 +152,7 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 		    dockerpwd=$(docker logs $dockerid | grep MARIADB_PASS | awk -F "=" '{print $2}')
 
 		    #affichage des infos de connexion
-		    echo " "
+		    echo
 		    echo -e "\033[36mLes identifiants de la bdd sont rootsql / $dockerpwd \033[0m"
 		    break
 		    ;;
@@ -161,22 +161,22 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 		    
 			#choix: Installation de PhpMyAdmin
 		4)	echo -e "\033[36mInstallation du container : $choix. \033[0m"
-			echo " "
+			echo
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 
-			echo " "
+			echo
 			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mPull du container, prenez un café le temps du téléchargement! \033[0m"
 		    #https://hub.docker.com/r/nazarpc/phpmyadmin/
 		    docker pull nazarpc/phpmyadmin
 
-		    echo " "
+		    echo
 		    echo -e "\033[36mLancement du container \033[0m"
 		    #demande l'adresse IP du serveur avec la bdd
 		    read -p  "Quelle est l'IP  de la base de donnée?" ip
@@ -187,7 +187,7 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 		    iplocal=$(ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}')
 
 		    #affichage des infos de connexion
-		    echo " "
+		    echo
 		    echo -e "\033[36mL'interface PhpMyAdmin est disponible à l'adresse suivante : http://$iplocal:1234 \033[0m"
 		    break
 		    ;;
@@ -195,19 +195,19 @@ select choix in "Stack LAMP" "Nginx-php-fqm" "MariaDB" "PhpMyAdmin" "Docker stan
 			###################################################################
 
 		5)	echo -e "\033[36mInstallation de : $choix. \033[0m"
-			echo " "
+			echo
 			echo -e "\033[36mTéléchargement des tools \033[0m"
 			#appel à la fonction tools
 			toolsPackage
 
-			echo " "
+			echo
 			echo -e "\033[36mInstallation de docker \033[0m"
 		    #appel à la fonction docker
 			dockerPackage
 
 		    #affichage des infos de connexion
-		    echo " "
-		    echo -e "\033[36mDockers est installé ! \033[0m"
+		    echo
+		    echo -e "\033[36mDocker est installé ! \033[0m"
 		    break
 		    ;;
 
